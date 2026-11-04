@@ -208,5 +208,153 @@
     "orderThis": "Order this",
     "tryDesigns": "Try designs",
     "noPrices": "We don't list prices because they depend on your size, material, quantity and deadline. Send us your details and we'll reply with a quote."
+  },
+  "templates": {
+    "names": {
+      "vc-classic": "Classic centred",
+      "vc-modern": "Modern side band",
+      "vc-bold": "Bold colour",
+      "lh-corporate": "Corporate",
+      "lh-traditional": "Traditional centred",
+      "bn-promo": "Shop offer",
+      "bn-festival": "Festival greeting",
+      "mn-classic": "Classic restaurant",
+      "mn-cafe": "Modern café",
+      "ts-front": "Front print",
+      "bk-cover": "Report / book cover",
+      "fl-event": "Event flyer",
+      "fl-invite": "Invitation card"
+    },
+    "fields": {
+      "name": "Name",
+      "title": "Designation",
+      "company": "Business / organisation name",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "website": "Website or social handle",
+      "tagline": "Tagline",
+      "footerNote": "Footer note (e.g. GSTIN)",
+      "headline": "Main heading",
+      "subline": "Sub heading",
+      "offer": "Offer badge text",
+      "contact": "Contact line",
+      "items": "Menu items",
+      "extra": "Small extra text (year, number…)",
+      "institution": "Institution / publisher",
+      "author": "Author / submitted by",
+      "details": "Details",
+      "date": "Date & time",
+      "venue": "Venue",
+      "invocation": "Top blessing line",
+      "names": "Names"
+    },
+    "hints": {
+      "items": "One item per line. Start a line with # for a section heading. Add a price after a | sign, e.g. \"Masala Dosa | 60\".",
+      "names": "Use a new line for each name."
+    },
+    "palettes": {
+      "ink": "Magenta ink",
+      "navy": "Navy",
+      "gold": "Gold & cream",
+      "forest": "Forest green",
+      "charcoal": "Charcoal & gold",
+      "sunrise": "Sunrise",
+      "ocean": "Ocean",
+      "festive": "Festive maroon",
+      "temple": "Temple red",
+      "shirtWhite": "White shirt",
+      "shirtBlack": "Black shirt",
+      "shirtNavy": "Navy shirt",
+      "shirtRed": "Red shirt",
+      "shirtGrey": "Grey shirt"
+    },
+    "samples": {
+      "vc": {
+        "name": "Ravi Kumar",
+        "title": "Proprietor",
+        "company": "Sri Lakshmi Traders",
+        "phone": "+91 98480 12345",
+        "email": "ravi@example.com",
+        "address": "12-3-45, Main Road, Vijayawada",
+        "website": "www.example.com"
+      },
+      "lh": {
+        "company": "Sri Lakshmi Traders",
+        "tagline": "Wholesale dealers in rice and pulses",
+        "phone": "+91 98480 12345",
+        "email": "info@example.com",
+        "website": "www.example.com",
+        "address": "12-3-45, Main Road, Vijayawada, Andhra Pradesh 520001",
+        "footerNote": "GSTIN: 37ABCDE1234F1Z5"
+      },
+      "bn-promo": {
+        "company": "Sri Lakshmi Textiles",
+        "headline": "Grand Festive Sale",
+        "subline": "New arrivals in sarees, dress materials and kids wear",
+        "offer": "Up to 50% off",
+        "contact": "Call: +91 98480 12345",
+        "address": "Main Road, near Bus Stand"
+      },
+      "bn-festival": {
+        "headline": "Happy Diwali",
+        "subline": "Wishing you and your family a bright and prosperous Diwali",
+        "company": "From all of us at Sri Lakshmi Traders",
+        "contact": "+91 98480 12345"
+      },
+      "mn": {
+        "company": "Annapurna Tiffins",
+        "tagline": "Pure veg · Since 1998",
+        "items": "# Breakfast\nIdli (2) | 40\nMasala Dosa | 60\nPesarattu | 70\nPuri (2) | 50\n# Meals\nVeg Meals | 120\nCurd Rice | 60\n# Beverages\nFilter Coffee | 25\nMasala Tea | 20",
+        "contact": "Main Road, Guntur · +91 98480 12345"
+      },
+      "ts-front": {
+        "headline": "Team Thunder",
+        "subline": "Inter-college cricket tournament",
+        "extra": "2026"
+      },
+      "bk-cover": {
+        "institution": "ABC Engineering College",
+        "title": "Smart Irrigation System using IoT",
+        "subtitle": "A project report submitted in partial fulfilment of the requirements for the degree of B.Tech",
+        "author": "Priya Sharma",
+        "details": "Department of ECE\n2025–2026"
+      },
+      "fl-event": {
+        "headline": "Free Health Camp",
+        "subline": "Eye, dental and general check-up",
+        "date": "Sunday, 14 December · 9 AM – 2 PM",
+        "venue": "Community Hall, Gandhi Nagar",
+        "details": "Free BP and sugar tests\nConsultation with specialist doctors\nMedicines at discounted rates",
+        "contact": "Register: +91 98480 12345"
+      },
+      "fl-invite": {
+        "invocation": "Sri Ganeshaya Namah",
+        "headline": "Wedding Invitation",
+        "names": "Ravi\n&\nPriya",
+        "details": "We request the pleasure of your company\non Friday, 12 February 2027\nMuhurtham: 10:30 AM",
+        "venue": "Sri Venkateswara Kalyana Mandapam\nGuntur",
+        "contact": "With best compliments from family & friends"
+      }
+    }
+  },
+  "studio": {
+    "title": "Design studio",
+    "subtitle": "Pick a layout, type your real text and see an accurate preview at the actual print size. When you like it, send it with your order.",
+    "service": "Service",
+    "layout": "Layout",
+    "colours": "Colours",
+    "yourText": "Your text",
+    "logo": "Logo (optional)",
+    "logoHint": "PNG or JPG. Shown in the preview only; attach the original file with your order too.",
+    "removeLogo": "Remove logo",
+    "guides": "Show safe-area guide",
+    "guidesHint": "Keep important text inside the dashed line so nothing gets trimmed.",
+    "size": "Print size",
+    "reset": "Reset sample text",
+    "download": "Download preview (SVG)",
+    "useInOrder": "Use this design in my order",
+    "previewNote": "This is a layout preview. We'll send you a final proof to approve before printing.",
+    "noTemplates": "We don't have ready layouts for this service yet. Describe what you want in the order form and we'll design it for you."
   }
 }
