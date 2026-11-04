@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "description": "Printing and design for banners, T-shirts, visiting cards, letterheads, book binding, DTP and menu cards. Describe your job online and we'll get to work."
+  },
+  "nav": {
+    "label": "Main",
+    "menu": "Menu",
+    "services": "Services",
+    "studio": "Design studio",
+    "assistant": "AI assistant",
+    "order": "Place an order",
+    "track": "Track order"
+  },
+  "theme": {
+    "label": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "whatsapp": {
+    "button": "Chat on WhatsApp",
+    "prefill": "Hello! I'd like to ask about a printing job."
+  },
+  "footer": {
+    "contact": "Contact us",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "map": "Find us on the map",
+    "links": "Quick links",
+    "noPrices": "Prices depend on size, material and quantity, so we quote each job personally."
+  },
+  "home": {
+    "eyebrow": "Printing & design studio",
+    "title": "Print it the way you imagine it",
+    "subtitle": "Banners, T-shirts, visiting cards, letterheads, books, menus and more. Pick a design style and material, describe your job, and we'll take it from there.",
+    "ctaOrder": "Place an order",
+    "ctaStudio": "Try the design studio"
+  }
+}
