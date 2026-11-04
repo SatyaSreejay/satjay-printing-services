@@ -25,12 +25,14 @@ export async function Footer() {
             <li>
               {t("email")}: <a className="underline" href={`mailto:${business.email}`}>{business.email}</a>
             </li>
-            <li className="pt-1 text-muted">
-              {business.addressLines.map((line) => (
-                <span key={line} className="block">{line}</span>
-              ))}
-            </li>
-            <li className="text-muted">{t("hours")}: {business.hours}</li>
+            {business.addressLines.length > 0 && (
+              <li className="pt-1 text-muted">
+                {business.addressLines.map((line) => (
+                  <span key={line} className="block">{line}</span>
+                ))}
+              </li>
+            )}
+            {business.hours && <li className="text-muted">{t("hours")}: {business.hours}</li>}
             {business.mapUrl && (
               <li>
                 <a className="underline" href={business.mapUrl} target="_blank" rel="noopener noreferrer">{t("map")}</a>

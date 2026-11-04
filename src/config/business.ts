@@ -1,32 +1,33 @@
 /**
- * Business details shown across the site.
- *
- * Everything marked PLACEHOLDER must be replaced with the real details
- * before going live. This is the only file that holds them.
+ * Business details shown across the site. This is the only file that holds
+ * them; anything marked PLACEHOLDER still needs the real value.
  */
 export const business = {
-  /** PLACEHOLDER: shop name shown in the header, footer and emails. */
-  name: "Your Print Shop",
-  /** PLACEHOLDER: short tagline under the name. */
+  /** Business name shown in the header, footer and emails (confirm spelling). */
+  name: "Satjay Printing Services",
+  /** Short tagline under the name. */
   tagline: "Printing & design, done right",
-  /** PLACEHOLDER: phone number shown to customers (display format). */
-  phoneDisplay: "+91 90000 00000",
-  /** PLACEHOLDER: phone number in E.164 digits for tel: links. */
-  phoneE164: "+919000000000",
+  /** Phone number shown to customers (display format). */
+  phoneDisplay: "+91 87906 03022",
+  /** Phone number in E.164 format for tel: links. */
+  phoneE164: "+918790603022",
   /**
-   * PLACEHOLDER: WhatsApp number, digits only with country code, no "+".
+   * WhatsApp number, digits only with country code, no "+".
    * Used for the "Chat on WhatsApp" (wa.me) button.
    */
-  whatsappNumber: "919000000000",
-  /** PLACEHOLDER: public email address shown to customers. */
-  email: "orders@example.com",
-  /** PLACEHOLDER: shop address, one line per entry. */
-  addressLines: ["Shop No. 0, Main Road", "Your City, State 000000"],
-  /** PLACEHOLDER: opening hours. */
-  hours: "Mon–Sat, 9:30 AM – 8:30 PM",
-  /** PLACEHOLDER: Google Maps link to the shop, or empty to hide. */
+  whatsappNumber: "918790603022",
+  /** Public email address shown to customers. */
+  email: "bestbards@gmail.com",
+  /**
+   * Address lines shown in the footer. Empty on purpose: the business runs
+   * from home, so no address is published. Add lines here to show one.
+   */
+  addressLines: [] as string[],
+  /** Working hours shown in the footer, or empty to hide. */
+  hours: "",
+  /** Google Maps link, or empty to hide. */
   mapUrl: "",
-  /** PLACEHOLDER: short prefix for ticket numbers, e.g. "SPS" gives SPS-261104-7K3Q. */
+  /** Short prefix for ticket numbers, e.g. "SPS" gives SPS-261104-7K3Q. */
   ticketPrefix: "SPS",
 } as const;
 

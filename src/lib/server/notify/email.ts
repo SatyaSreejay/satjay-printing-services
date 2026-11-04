@@ -133,7 +133,7 @@ export class EmailNotifier implements Notifier {
 
   async newTicket(ctx: NewTicketContext): Promise<NotifyResult[]> {
     const results: NotifyResult[] = [];
-    const to = this.cfg.to || "shop-owner@example.com";
+    const to = this.cfg.to || business.email;
     try {
       const m = shopEmail(ctx);
       const id = await this.send({ to, ...m, replyTo: ctx.ticket.customer.email || undefined });
