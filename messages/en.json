@@ -470,5 +470,25 @@
   "designView": {
     "title": "Design preview",
     "note": "Layout preview at print size. Final artwork is confirmed with a proof before printing."
+  },
+  "assistant": {
+    "title": "AI design assistant",
+    "subtitle": "Describe what you need in your own words, in English, Telugu or Hindi, and get layout ideas with your real text.",
+    "offTitle": "Coming soon",
+    "offBody": "Our AI design assistant is being set up. In the meantime you can try ready layouts with your own text in the design studio, or send us your idea in the order form.",
+    "placeholder": "e.g. Visiting card for my tiffin centre, Annapurna Tiffins, name Ravi, phone 98480 12345, traditional look",
+    "send": "Send",
+    "thinking": "Thinking of designs…",
+    "why": "Why this works",
+    "useDesign": "Use this design",
+    "addArtwork": "Add an AI background",
+    "removeArtwork": "Remove background",
+    "artworkWorking": "Creating background…",
+    "concept": "Show an inspiration image",
+    "conceptLabel": "Inspiration concept, not final artwork",
+    "artworkNote": "Backgrounds are AI-generated and contain no text. Your text is placed on top exactly as typed.",
+    "error": "Sorry, something went wrong. Please try again.",
+    "rateLimited": "You've reached today's limit for the assistant. Please try the design studio or place an order.",
+    "disclaimer": "AI suggestions can be imperfect. We check every design and send you a proof before printing."
   }
 }
