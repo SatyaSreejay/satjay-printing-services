@@ -26,6 +26,8 @@ export const business = {
   hours: "Mon–Sat, 9:30 AM – 8:30 PM",
   /** PLACEHOLDER: Google Maps link to the shop, or empty to hide. */
   mapUrl: "",
+  /** PLACEHOLDER: short prefix for ticket numbers, e.g. "SPS" gives SPS-261104-7K3Q. */
+  ticketPrefix: "SPS",
 } as const;
 
 /** Upload limits agreed for the order form. */
