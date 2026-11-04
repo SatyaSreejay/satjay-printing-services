@@ -153,6 +153,11 @@ export class EmailNotifier implements Notifier {
     return results;
   }
 
+  /** Send any message through the configured transport (or dev outbox). */
+  sendTo(msg: { to: string; subject: string; html: string; text: string; replyTo?: string }) {
+    return this.send(msg);
+  }
+
   /** In development without SMTP, the outbox stands in for real email. */
   usable() {
     return this.isConfigured() || this.devOutbox();

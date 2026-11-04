@@ -2,7 +2,7 @@ import "server-only";
 import { business } from "@/config/business";
 import type { Ticket } from "@/lib/tickets";
 import { getStorage } from "./storage";
-import { randomCode, randomToken, sha256 } from "./signing";
+import { randomCode, randomToken, sha256, sign } from "./signing";
 
 /**
  * Tickets are stored as JSON objects in the same storage as uploads:
@@ -32,12 +32,26 @@ export async function getTicket(id: string): Promise<Ticket | null> {
   return getStorage().getJson<Ticket>(`tickets/${id}.json`);
 }
 
-/** Create a tracking token for a new ticket. Returns the raw token. */
-export async function createTracking(ticketId: string): Promise<{ token: string; hash: string }> {
-  const token = randomToken(24);
+/**
+ * Tracking tokens are derived from the ticket id and a random nonce with the
+ * server secret, so the raw token is never stored, yet the shop can re-send
+ * the same link later. A new nonce (re-issue) retires the old link.
+ */
+export function trackingToken(ticketId: string, nonce: string): string {
+  return sign(`${ticketId}|${nonce}`, "track").slice(0, 32);
+}
+
+export async function createTracking(ticketId: string): Promise<{ token: string; hash: string; nonce: string }> {
+  const nonce = randomToken(12);
+  const token = trackingToken(ticketId, nonce);
   const hash = sha256(token);
   await getStorage().putJson(`tracking/${hash}.json`, { ticketId });
-  return { token, hash };
+  return { token, hash, nonce };
+}
+
+/** Current tracking link token for a ticket. */
+export function currentToken(t: Ticket): string {
+  return trackingToken(t.id, t.trackingNonce);
 }
 
 export async function ticketByToken(token: string): Promise<Ticket | null> {

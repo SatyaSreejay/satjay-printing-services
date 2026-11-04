@@ -97,7 +97,7 @@ export async function POST(req: Request) {
 
   const now = new Date().toISOString();
   const id = newTicketId();
-  const { token, hash } = await createTracking(id);
+  const { token, hash, nonce } = await createTracking(id);
   const c = b.customer;
   const ticket: Ticket = {
     id,
@@ -128,6 +128,7 @@ export async function POST(req: Request) {
     design: snapshot ? { ...snapshot, logoKey } : undefined,
     files,
     trackingHash: hash,
+    trackingNonce: nonce,
     notes: [],
     notifications: [],
   };

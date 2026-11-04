@@ -364,7 +364,9 @@
     "ticketNumber": "Your ticket number",
     "track": "Track your order",
     "keepPrivate": "Keep this link private. Anyone with it can see your order status.",
-    "questions": "Questions? Reply to this email or contact us:"
+    "questions": "Questions? Reply to this email or contact us:",
+    "statusSubject": "Order {id}: {status}",
+    "statusBody": "There's an update on your order {id}. New status: {status}."
   },
   "order": {
     "title": "Place an order",

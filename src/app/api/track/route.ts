@@ -26,8 +26,9 @@ export async function POST(req: Request) {
   }
   // Rotate the token: write the new mapping, then retire the old one.
   const old = t.trackingHash;
-  const { token, hash } = await createTracking(t.id);
+  const { token, hash, nonce } = await createTracking(t.id);
   t.trackingHash = hash;
+  t.trackingNonce = nonce;
   await saveTicket(t);
   await getStorage().putJson(`tracking/${old}.json`, { ticketId: null }).catch(() => {});
   return NextResponse.json({ url: `/t/${token}` });

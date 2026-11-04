@@ -53,8 +53,10 @@ export interface Ticket {
   };
   design?: DesignSnapshot & { logoKey?: string };
   files: TicketFile[];
-  /** sha256 of the tracking token; the token itself is never stored. */
+  /** sha256 of the current tracking token (used to look the ticket up). */
   trackingHash: string;
+  /** Random value the tracking token is derived from (see ticketStore). */
+  trackingNonce: string;
   /** Internal notes from the shop (never shown to customers). */
   notes: { at: string; text: string }[];
   notifications: { channel: string; ok: boolean; at: string; detail?: string }[];
