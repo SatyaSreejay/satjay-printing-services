@@ -19,7 +19,7 @@ export function LanguageSwitcher() {
   return (
     <label className="inline-flex items-center gap-1.5 text-sm">
       <span className="sr-only">{t("label")}</span>
-      <span aria-hidden>🌐</span>
+      <span aria-hidden className="hidden sm:inline">🌐</span>
       <select
         className="input !w-auto !py-1.5 !pl-2 !pr-7 text-sm"
         value={locale}

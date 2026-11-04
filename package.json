@@ -1,12 +1,15 @@
 {
-  "name": "sps-website",
+  "name": "print-shop-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "i18n:check": "node scripts/i18n.mjs check",
+    "i18n:review": "node scripts/i18n.mjs review"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.4.0",

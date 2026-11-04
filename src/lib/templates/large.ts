@@ -343,7 +343,7 @@ export const flyerEvent: DesignTemplate = {
       `<rect x="0" y="192" width="${A5W}" height="18" fill="${p.fg}"/>`,
       text(A5W / 2, 203.5, v.contact, { size: 4.3, fill: p.bg, weight: 700, anchor: "middle", maxWidth: 130 }),
     ].join("");
-    return doc(A5W, A5H, p.accent, `<rect x="0" y="96" width="${A5W}" height="${A5H - 96}" fill="${p.bg}"/>` + body, input, 5);
+    return doc(A5W, A5H, p.accent, `<rect x="0" y="95.5" width="${A5W}" height="${A5H - 95.5}" fill="${p.bg}"/>` + body, input, 5);
   },
 };
 
